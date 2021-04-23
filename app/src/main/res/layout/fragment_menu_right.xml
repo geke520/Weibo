@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zt.weibo.fragment.MenuRightFragment">
+
+    <!-- 圆形头像的自定义ImageView -->
+    <ImageView
+        android:id="@+id/menu_headImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/headlogo" />
+
+    <TextView
+            android:id="@+id/menu_blognick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_headImage"
+            android:layout_alignStart="@+id/menu_headImage"
+            android:layout_alignLeft="@+id/menu_headImage"
+            android:layout_marginTop="16dp"
+            android:text="weilai"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"/>
+    <RadioGroup
+        android:id="@+id/menu_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_blognick"
+        android:layout_marginTop="50dp"
+        android:checkedButton="@+id/menu_toutiao"
+        android:gravity="center_horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444444"
+            android:clickable="true" />
+
+        <RadioButton
+            android:id="@+id/menu_toutiao"
+            style="@style/menu_btn"
+            android:drawableLeft="@drawable/menu_toutiao"
+            android:text="博客头条" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444444"
+            android:clickable="true" />
+
+        <RadioButton
+            android:id="@+id/menu_mydata"
+            style="@style/menu_btn"
+            android:drawableLeft="@drawable/menu_write"
+            android:text="我的资料" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444444"
+            android:clickable="true" />
+
+        <RadioButton
+            android:id="@+id/menu_cate"
+            style="@style/menu_btn"
+            android:drawableLeft="@drawable/menu_fenlei"
+            android:text="博客分类" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444444"
+            android:clickable="true" />
+
+        <RadioButton
+            style="@style/menu_btn"
+            android:drawableLeft="@drawable/menu_user"
+            android:text="退出系统" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444444"
+            android:clickable="true" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

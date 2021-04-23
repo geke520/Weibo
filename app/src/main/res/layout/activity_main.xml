@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zt.weibo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/my_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp">
+
+        <Button
+            android:id="@+id/main_menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="left|center"
+            android:onClick="mainOnClick"
+            android:text="菜单"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/main_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:checkedButton="@+id/tuijian_blog"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mainAll_blog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_radiobtn"
+                android:button="@null"
+                android:padding="3dp"
+                android:text="全部博客"
+                android:textColor="@color/main_text" />
+
+            <RadioButton
+                android:id="@+id/mainMy_blog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_radiobtn"
+                android:button="@null"
+                android:padding="3dp"
+                android:text="我的博客"
+                android:textColor="@color/main_text" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/main_write"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:onClick="mainOnClick"
+            android:text="发布"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

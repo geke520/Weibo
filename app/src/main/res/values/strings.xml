@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeiBo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="load">随时随地&#8195;发现新鲜事</string>
+    <string name="position">当前地点</string>
+</resources>

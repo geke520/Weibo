@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#726A6A"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/blogitem_headImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/headlogo" />
+
+    <TextView
+        android:id="@+id/blogitem_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/blogitem_headImageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/blogitem_headImageView"
+        android:layout_toRightOf="@+id/blogitem_headImageView"
+        android:text="weilai"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/my_color" />
+
+    <TextView
+        android:id="@+id/blogitem_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blogitem_nickname"
+        android:layout_alignStart="@+id/blogitem_nickname"
+        android:layout_alignLeft="@+id/blogitem_nickname"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+            android:id="@+id/blogitem_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/blogitem_nickname"
+            android:layout_alignEnd="@+id/blogitem_nickname"
+            android:layout_alignRight="@+id/blogitem_nickname"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/headimages"
+            android:padding="5dp"
+            android:text="审核通过"
+            android:textColor="@color/my_color"
+            android:textAppearance="?android:attr/textAppearanceSmall" android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/blogitem_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blogitem_gridview"
+        android:layout_alignStart="@+id/blogitem_nickname"
+        android:layout_alignLeft="@+id/blogitem_nickname"
+        android:layout_toEndOf="@+id/blogitem_headImageView"
+        android:layout_toRightOf="@+id/blogitem_headImageView"
+        android:text="2020.12.19"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/my_color" />
+
+    <com.example.zt.weibo.tools.NoScrollGridView
+        android:id="@+id/blogitem_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blogitem_content"
+        android:layout_alignStart="@+id/blogitem_content"
+        android:layout_alignLeft="@+id/blogitem_content"
+        android:columnWidth="100dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth" />
+
+
+</RelativeLayout>

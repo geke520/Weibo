@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zt.weibo.activity.WriteBlogActivity">
+
+    <RadioGroup
+        android:id="@+id/write_blog_radio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/my_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/write_back_write"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="返回" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:button="@null"
+            android:gravity="center"
+            android:text="发表博客" />
+
+        <RadioButton
+            android:id="@+id/write_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="right|center_vertical"
+            android:text="发表" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/menu_white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/writeblog_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入博文"
+            android:maxLines="6"
+            android:minLines="6"
+            android:textColor="#000000"
+            android:textColorHint="@color/my_color" />
+
+        <GridView
+
+                android:id="@+id/write_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="100dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+
+        />
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/position" />
+
+
+</LinearLayout>

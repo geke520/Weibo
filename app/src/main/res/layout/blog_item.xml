@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#726A6A"
+    android:padding="16dp">
+
+    <com.example.zt.weibo.tools.CircleImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/headimages"
+        android:background="@drawable/headlogo"
+        app:civ_border_color="@color/my_color"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView4"
+        android:text="weilai"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/my_color" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:textColor="#4E4A4A"
+        android:text="《越狱》落榜难以置信 史上最佳英美剧TOP20 _ 游民星空 GamerSky.com
+英美剧越来越受到国人的喜爱，主要是不乏一些精彩之作来吸引观众。而英美剧这种剧情紧凑之作精良堪比电影的拍摄方式也是受欢迎的... 查看全文《越狱》落榜难以置信 史上最佳英美剧TOP20 _ 游民星空 GamerSky.com
+英美剧越来越受到国人的喜爱，主要是不乏一些精彩之作来吸引观众。而英美剧这种剧情紧凑之作精良堪比电影的拍摄方式也是受欢迎的... 查看全文"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/blogitem1_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/text02" />
+
+
+</RelativeLayout>

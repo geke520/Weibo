@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.zt.weibo.activity.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/my_color"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/register_back"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:text="微博用户注册"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="fill_vertical|center" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/weibo" />
+
+    <EditText
+        android:id="@+id/register_code"
+        style="@style/zhuce_Edit"
+        android:layout_below="@+id/register_phone"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/register_phone"
+        android:layout_alignLeft="@+id/register_phone"
+        android:layout_alignEnd="@+id/register_v"
+        android:layout_alignRight="@+id/register_v"
+        android:background="@drawable/zhuce1"
+        android:drawableLeft="@drawable/user"
+        android:hint="输入您收到验证码"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/register_phone"
+        style="@style/zhuce_Edit"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/zhuce"
+        android:drawableLeft="@drawable/user"
+        android:hint="请输入手机号"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/register_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignBottom="@+id/register_phone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:background="@drawable/zhuce_v"
+        android:onClick="registerOnClick"
+        android:padding="5dp"
+        android:text="获得验证码" />
+
+
+    <Button
+        android:id="@+id/register_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_code"
+        android:layout_alignStart="@+id/register_code"
+        android:layout_alignLeft="@+id/register_code"
+        android:layout_alignEnd="@+id/register_code"
+        android:layout_alignRight="@+id/register_code"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/zhuce_ensure"
+        android:onClick="registerOnClick"
+        android:text="下一步"
+        android:textSize="20sp" />
+
+</RelativeLayout>

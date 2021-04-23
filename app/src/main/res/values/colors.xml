@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EE907F</color>
+    <color name="colorPrimaryDark">#EE907F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btn_color">#fff</color>
+    <color name="my_color">#EE907F</color>
+    <color name="main_color">#fff</color>
+    <color name="my_Edit">#e1e1e1</color>
+    <color name="menu">#303030</color>
+    <color name="white">#ffffff</color>
+    <color name="menu_white">#F3F1F1</color>
+    <color name="myBlack">#fff</color>
+</resources>
